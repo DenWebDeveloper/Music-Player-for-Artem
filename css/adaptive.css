@@ -8,7 +8,19 @@
 
         border-radius: 0px;
         height: 100vh;
-       
+
+    }
+
+    .top-bar {
+
+        padding: 5px 15px;
+    }
+
+    .controls {
+   
+        width: 100%;
+        margin: 40px 0 10px 0;
+        padding: 10px;
     }
     
 }
@@ -21,9 +33,17 @@
 
     .wrapper {
 
-        
         border-radius: 0px;
+        padding: 15px 30px;
+
        
+    }
+
+    .controls {
+   
+        width: 100%;
+        margin: 40px 0 10px 0;
+        padding: 10px;
     }
     
 }
@@ -33,6 +53,21 @@
     body {
         background: black;
     }
+
+    
+.wrapper {
+
+    
+    
+
+}
+
+    
+    .top-bar {
+
+        padding: 5px 15px;
+    }
+
 }
 
 
@@ -51,7 +86,6 @@
         font-family: 'Nautilus Pompilius';
     
         font-weight: bold;
-        /* font-size: 30px; */
         
     }
 }
