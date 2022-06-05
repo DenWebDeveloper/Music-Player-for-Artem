@@ -47,4 +47,352 @@ let allMusic = [
         
         audioId: "audio-trek"
     },
+    // ---------------------------------------------------------------------------------
+    {
+        id: "music-6",
+        name: "5`Nizza  - я солдат",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "5`Nizza  - я солдат",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-7",
+        name: "Bittuev - Братик",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Bittuev - Братик",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-8",
+        name: "Brainstorm - Выходные",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Brainstorm - Выходные",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-9",
+        name: "Venus - Shocking Blue",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Venus - Shocking Blue",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-10",
+        name: "Алексин - Малолетние шалавы",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Алексин - Малолетние шалавы",
+        
+        audioId: "audio-trek"
+    },
+
+    // ---------------------------------------------------------------------------------
+
+    {
+        id: "music-11",
+        name: "Аркадий Кобяков - Все позади",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Аркадий Кобяков - Все позади",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-12",
+        name: "Басата - Сансара",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Басата - Сансара",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-13",
+        name: "БРАВО - Если бы на Марсе были города",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "БРАВО - Если бы на Марсе были города",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-14",
+        name: "Евгений Осин - Не надо, не плачь",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Евгений Осин - Не надо, не плачь",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-15",
+        name: "Жемчуга в волосах.",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Жемчуга в волосах.",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-16",
+        name: "Звери - Дожди, пистолеты",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Звери - Дожди, пистолеты",
+        
+        audioId: "audio-trek"
+    },
+
+    // ---------------------------------------------------------------------------------
+
+    {
+        id: "music-17",
+        name: "Ислам Идигов - Годы прошли",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Ислам Идигов - Годы прошли",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-18",
+        name: "Кино - Начинается новый день",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Кино - Начинается новый день",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-19",
+        name: "КИШ - Дурак и молния",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "КИШ - Дурак и молния",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-20",
+        name: "КИШ - Ели мясо мужики",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "КИШ - Ели мясо мужики",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-21",
+        name: "КИШ - Кукла Колдуна",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "КИШ - Кукла Колдуна",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-22",
+        name: "Король и Шут - Марионетки",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Король и Шут - Марионетки",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-23",
+        name: "курица",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "курица",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-24",
+        name: "Ленинград - Вояж",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Ленинград - Вояж",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-25",
+        name: "Леприконсы - Хали Гали",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Леприконсы - Хали Гали",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-26",
+        name: "Лицей - Осень",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Лицей - Осень",
+        
+        audioId: "audio-trek"
+    },
+
+    // ---------------------------------------------------------------------------------
+
+    {
+        id: "music-27",
+        name: "Мельница - Волкодав",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Мельница - Волкодав",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-28",
+        name: "Милые зеленые глаза",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Милые зеленые глаза",
+        
+        audioId: "audio-trek"
+    },
+
+
+    {
+        id: "music-29",
+        name: "Мумий Троль - Дельфины",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Мумий Троль - Дельфины",
+        
+        audioId: "audio-trek"
+    },
+
+
+    {
+        id: "music-30",
+        name: "Наутилус Помпилиус - Дыхание",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Наутилус Помпилиус - Дыхание",
+        
+        audioId: "audio-trek"
+    },
+
+
+    {
+        id: "music-31",
+        name: "Ты, да я, да мы с тобой",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Ты, да я, да мы с тобой",
+        
+        audioId: "audio-trek"
+    },
+
+
+    {
+        id: "music-32",
+        name: "Руки Вверх - Некрасивая",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Руки Вверх - Некрасивая",
+        
+        audioId: "audio-trek"
+    },
+
+
+    {
+        id: "music-33",
+        name: "Сектор Газа - Казачья",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Сектор Газа - Казачья",
+        
+        audioId: "audio-trek"
+    },
+
+
+    {
+        id: "music-34",
+        name: "Сектор Газа - Колхозный панк",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Сектор Газа - Колхозный панк",
+        
+        audioId: "audio-trek"
+    },
+
+
+    {
+        id: "music-35",
+        name: "Сплин - Выхода нет",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Сплин - Выхода нет",
+        
+        audioId: "audio-trek"
+    },
+
+
+    {
+        id: "music-36",
+        name: "Султан Лагучев - Горький вкус",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Султан Лагучев - Горький вкус",
+        
+        audioId: "audio-trek"
+    },
+
+
+    {
+        id: "music-37",
+        name: "Петлюра - Ты одна стоишь у клена",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Петлюра - Ты одна стоишь у клена",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-37",
+        name: "Фактор 2 - Весна",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Фактор 2 - Весна",
+        
+        audioId: "audio-trek"
+    },
+
+
+
 ];
