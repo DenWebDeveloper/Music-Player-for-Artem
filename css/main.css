@@ -22,6 +22,7 @@
 }
 
 body {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,6 +33,8 @@ body {
     background-position: center bottom;
     width: 100%;
     height: 100vh;
+
+    /* padding: 5px; */
     
 }
 

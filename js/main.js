@@ -1,4 +1,4 @@
-"use strict";
+
 // Объявление констант для дальнейшей работы с ними.
 const wrapper = document.querySelector('.wrapper'), 
 musicImg = wrapper.querySelector('.img-area img'),
