@@ -385,14 +385,23 @@ let allMusic = [
 
     {
         id: "music-37",
-        name: "Фактор 2 - Весна",
+        name: "ДДТ - Что такое осень",
         artist: "Исполнитель : Артем",
         img: "../images/Rock__Teams/Rojdestvo",
-        src: "Фактор 2 - Весна",
+        src: "ДДТ - Что такое осень",
         
         audioId: "audio-trek"
     },
 
+    {
+        id: "music-38",
+        name: "Кино - песня без слов",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Кино - песня без слов",
+        
+        audioId: "audio-trek"
+    },
 
 
 ];
