@@ -384,7 +384,7 @@ let allMusic = [
     },
 
     {
-        id: "music-37",
+        id: "music-38",
         name: "ДДТ - Что такое осень",
         artist: "Исполнитель : Артем",
         img: "../images/Rock__Teams/Rojdestvo",
@@ -394,7 +394,7 @@ let allMusic = [
     },
 
     {
-        id: "music-38",
+        id: "music-39",
         name: "Кино - песня без слов",
         artist: "Исполнитель : Артем",
         img: "../images/Rock__Teams/Rojdestvo",
@@ -402,6 +402,37 @@ let allMusic = [
         
         audioId: "audio-trek"
     },
+
+    {
+        id: "music-40",
+        name: "КняZz - Дом манекенов",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "КняZz - Дом манекенов",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-41",
+        name: "М.Башаков - Кто такая Элис?",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "М.Башаков - Кто такая Элис?",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-42",
+        name: "Петлюра - Пацаны",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Петлюра - Пацаны",
+        
+        audioId: "audio-trek"
+    },
+
 
 
 ];
