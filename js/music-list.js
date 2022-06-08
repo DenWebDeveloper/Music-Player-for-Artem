@@ -415,7 +415,7 @@ let allMusic = [
 
     {
         id: "music-41",
-        name: "М.Башаков - Кто такая Элис?",
+        name: "М.Башаков - Кто такая Элис",
         artist: "Исполнитель : Артем",
         img: "../images/Rock__Teams/Rojdestvo",
         src: "М.Башаков - Кто такая Элис?",
