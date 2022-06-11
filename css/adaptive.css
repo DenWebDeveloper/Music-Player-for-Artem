@@ -204,5 +204,11 @@
 
         transform: scale(1);
     }
+
+    .music-list .row {
+
+        padding: 15px 0 15px;
+
+    }
     
 }

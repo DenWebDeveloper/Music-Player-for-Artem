@@ -50,7 +50,7 @@ let allMusic = [
     // ---------------------------------------------------------------------------------
     {
         id: "music-6",
-        name: "5`Nizza  - я солдат",
+        name: "5`Nizza  - Я солдат",
         artist: "Исполнитель : Артем",
         img: "../images/Rock__Teams/Rojdestvo",
         src: "5`Nizza  - я солдат",
@@ -214,7 +214,7 @@ let allMusic = [
 
     {
         id: "music-22",
-        name: "Король и Шут - Марионетки",
+        name: "КИШ - Марионетки",
         artist: "Исполнитель : Артем",
         img: "../images/Rock__Teams/Rojdestvo",
         src: "Король и Шут - Марионетки",
@@ -224,7 +224,7 @@ let allMusic = [
 
     {
         id: "music-23",
-        name: "курица",
+        name: "Курица",
         artist: "Исполнитель : Артем",
         img: "../images/Rock__Teams/Rojdestvo",
         src: "курица",
@@ -395,7 +395,7 @@ let allMusic = [
 
     {
         id: "music-39",
-        name: "Кино - песня без слов",
+        name: "Кино - Песня без слов",
         artist: "Исполнитель : Артем",
         img: "../images/Rock__Teams/Rojdestvo",
         src: "Кино - песня без слов",

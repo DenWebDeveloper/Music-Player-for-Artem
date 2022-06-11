@@ -10,7 +10,7 @@ prevBtn = wrapper.querySelector('#prev'),
 nextBtn = wrapper.querySelector('#next'),
 progressArea = wrapper.querySelector('.progress-area'),
 musicList = wrapper.querySelector('.music-list'),
-
+inputSearch = wrapper.querySelector('.search-input'),
 showMoreBtn = wrapper.querySelector('#more-music'),
 hideMusicBtn = wrapper.querySelector('#close'),
 progressBar = wrapper.querySelector('.progress-bar');
@@ -42,18 +42,72 @@ function loadMusic(indexNumb) {
 
     itemMusicList = document.querySelectorAll('.music-list li');
 
+    console.log(itemMusicList);
 
     itemMusicList.forEach((element) => {
         
         element.addEventListener('click', () => {
 
             musicList.classList.remove('show');
+
+            itemMusicList.forEach((elem) => {
+    
+             
+            });
             
                 
         });
     });
 
+   
+
 }
+
+inputSearch.addEventListener('input', () => {
+
+    // console.log(inputSearch.value);
+
+    let valInput = inputSearch.value.trim();
+
+    console.log(valInput);
+
+    if(valInput != "") {
+
+        itemMusicList.forEach((elem) => {
+
+            if(elem.innerText.search(valInput) == -1) {
+                elem.classList.add('hide');
+                elem.innerHTML = elem.innerText;
+            } else{
+                elem.classList.remove('hide');
+                let str = elem.innerText;
+                elem.innerHTML = insertMark(str, elem.innerText.search(valInput), valInput.length);
+
+            }
+        });
+    } else {
+
+        itemMusicList.forEach((elem) => {
+
+            elem.classList.remove('hide');
+            elem.innerHTML = elem.innerText;
+        });
+    }
+
+
+});
+
+function insertMark(string,pos,len) {
+
+    return string.slice(0, pos)+string.slice(pos, pos + len)+string.slice(pos + len);
+
+} 
+
+// function insertMark(string,pos,len) {
+
+//     return string.slice(0, pos)+'<mark>'+string.slice(pos, pos + len)+'</mark>'+string.slice(pos + len);
+
+// } 
 
 
 
@@ -234,6 +288,26 @@ for( let i = 0; i < allMusic.length; i++) {
                     <audio class="${allMusic[i].id}" src="songs/${allMusic[i].src}.mp3"></audio>
                     <span id="${allMusic[i].id}" class="audio-duration">3:40</span>
                 </li>`;
+
+
+                // let liTag = `<li li-index="${i}">
+                //                 <div class="row row-1">
+
+                //                     <p>${allMusic[i].name}</p>
+                //                     <p>${allMusic[i].artist}</p>
+
+                //                 </div>
+
+
+                //                 <div class="row row-2">
+
+                //                     <audio class="${allMusic[i].id}" src="songs/${allMusic[i].src}.mp3"></audio>
+                //                     <p id="${allMusic[i].id}" class="audio-duration">3:40</p>
+                                
+                //                 </div>
+
+                           
+                //              </li>`;
 
     ulTag.insertAdjacentHTML("beforeend", liTag);
 
