@@ -1,3 +1,18 @@
+@media (max-width: 455px) {
+
+
+
+    .img-area {
+
+        max-width:  350px;
+        max-height:  250px;
+
+    }
+
+    
+}
+
+
 @media (max-width: 412px) {
 
     body {
@@ -22,6 +37,14 @@
         margin: 40px 0 10px 0;
         padding: 10px;
     }
+
+    .img-area {
+
+        max-width:  370px;
+        max-height: 350px;
+
+    }
+
     
 }
 
@@ -32,19 +55,59 @@
     }
 
     .wrapper {
-
+        width: 100%;
         border-radius: 0px;
         padding: 15px 30px;
 
        
     }
 
+  
     .controls {
    
         width: 100%;
         margin: 40px 0 10px 0;
         padding: 10px;
     }
+
+    .img-area {
+
+        max-width:  300px;
+        max-height: 250px;
+
+    }
+
+    .play-pause {
+
+        width: 50px;
+        height: 50px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+     
+    
+    }
+    
+    .controls .play-pause-i {
+    
+        position: relative;
+    
+        font-size: 40px;
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        transition: transform .5s;
+    }
+
+    .controls .play-pause-i:hover{
+
+        transform: scale(1);
+    }
+
     
 }
 
@@ -54,18 +117,40 @@
         background: black;
     }
 
-    
-.wrapper {
-
-    
-    
-
-}
-
-    
     .top-bar {
 
         padding: 5px 15px;
+    }
+
+    .play-pause {
+
+        width: 50px;
+        height: 50px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+     
+    
+    }
+    
+    .controls .play-pause-i {
+    
+        position: relative;
+    
+        font-size: 40px;
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        transition: transform .5s;
+    }
+
+    .controls .play-pause-i:hover{
+
+        transform: scale(1);
     }
 
 }
@@ -88,4 +173,36 @@
         font-weight: bold;
         
     }
+
+    .play-pause {
+
+        width: 50px;
+        height: 50px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+     
+    
+    }
+    
+    .controls .play-pause-i {
+    
+        position: relative;
+    
+        font-size: 40px;
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        transition: transform .5s;
+    }
+
+    .controls .play-pause-i:hover{
+
+        transform: scale(1);
+    }
+    
 }

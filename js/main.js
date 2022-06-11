@@ -9,7 +9,8 @@ playPauseBtn = wrapper.querySelector('.play-pause'),
 prevBtn = wrapper.querySelector('#prev'),
 nextBtn = wrapper.querySelector('#next'),
 progressArea = wrapper.querySelector('.progress-area'),
-musicList = wrapper.querySelector('.music-list')
+musicList = wrapper.querySelector('.music-list'),
+
 showMoreBtn = wrapper.querySelector('#more-music'),
 hideMusicBtn = wrapper.querySelector('#close'),
 progressBar = wrapper.querySelector('.progress-bar');
@@ -26,13 +27,34 @@ window.addEventListener('load', function(){
     
 });
 
+// console.log(itemMusicList);
+
+
+
+
+
 // Функция Загрузки композиции с массива.
 function loadMusic(indexNumb) {
     musicName.innerText = allMusic[indexNumb].name;
     musicArtist.innerText = allMusic[indexNumb].artist;
     musicImg.src = `./images/${allMusic[indexNumb].img}.jpg`;
     mainAudio.src = `./songs/${allMusic[indexNumb].src}.mp3`;
+
+    itemMusicList = document.querySelectorAll('.music-list li');
+
+
+    itemMusicList.forEach((element) => {
+        
+        element.addEventListener('click', () => {
+
+            musicList.classList.remove('show');
+            
+                
+        });
+    });
+
 }
+
 
 
 
@@ -60,6 +82,7 @@ function prevMusic() {
 
 
 console.log(allMusic.length);
+
 // Функция Переключения вперед
 function nextMusic() {
     musicIndex ++;
