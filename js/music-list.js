@@ -384,11 +384,41 @@ let allMusic = [
     },
 
     {
+        id: "music-42",
+        name: "Петлюра - Пацаны",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Петлюра - Пацаны",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-43",
+        name: "Петлюра - Платье белое",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Петлюра - Платье белое",
+        
+        audioId: "audio-trek"
+    },
+
+    {
         id: "music-38",
         name: "ДДТ - Что такое осень",
         artist: "Исполнитель : Артем",
         img: "../images/Rock__Teams/Rojdestvo",
         src: "ДДТ - Что такое осень",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-44",
+        name: "ДДТ - Ветер",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "ДДТ - Ветер",
         
         audioId: "audio-trek"
     },
@@ -423,15 +453,7 @@ let allMusic = [
         audioId: "audio-trek"
     },
 
-    {
-        id: "music-42",
-        name: "Петлюра - Пацаны",
-        artist: "Исполнитель : Артем",
-        img: "../images/Rock__Teams/Rojdestvo",
-        src: "Петлюра - Пацаны",
-        
-        audioId: "audio-trek"
-    },
+
 
 
 
