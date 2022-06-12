@@ -58,9 +58,9 @@ body {
     
 }
 
-.wrapper i {
+/* .wrapper i {
     cursor: pointer;
-}
+} */
 
 .top-bar, .progress-area .timer, .controls, 
 .music-list .header, .music-list li {
@@ -274,7 +274,7 @@ body {
     overflow: hidden;
     pointer-events: none;
     padding: 15px 1px 15px 15px;
-    /* border-radius: 15px; */
+    
     box-shadow: 0 -5px 10px rgba(0,0,0,.1);
     background: var(--white);
     transition: 1s ease;
@@ -283,10 +283,8 @@ body {
 
 .music-list.show {
 
-    /* transform: translateX(-4%); */
+  
     transform: translateX(0px);
-
-
 
     pointer-events: auto;
     transition: 1s ease;
@@ -311,36 +309,37 @@ body {
 }
 
 
-/* 
-li .row {
-    width: 50%;
+
+/* li .row {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    
-}
 
-li .row-1 {
+    
+} */
+
+/* li .row-1 {
 
     background: rgb(110, 251, 138);
 
     align-items: flex-start;
     justify-content: start;
-}
+} */
 
-li .row-2 {
+/* li .row-2 {
 
     background: rgb(88, 72, 72);
 
     align-items: flex-end;
     justify-content: start;
-} */
+}  */
 
-/* mark {
+mark {
 
     background-color: rgba(195, 195, 195, 0.553);
    
    
-} */
+} 
 
 .search-input {
 
@@ -427,6 +426,7 @@ li .row-2 {
 }
 
 .music-list ul li .row span {
+    width: 100%;
     font-size: 17px;
 }
 

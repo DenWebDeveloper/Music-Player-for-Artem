@@ -14,6 +14,10 @@ inputSearch = wrapper.querySelector('.search-input'),
 showMoreBtn = wrapper.querySelector('#more-music'),
 hideMusicBtn = wrapper.querySelector('#close'),
 progressBar = wrapper.querySelector('.progress-bar');
+let itemMusicList = document.querySelectorAll('li');
+
+
+
 
 
 let musicIndex = 0;
@@ -27,14 +31,12 @@ window.addEventListener('load', function(){
     
 });
 
-// console.log(itemMusicList);
-
-
-
-
 
 // Функция Загрузки композиции с массива.
+
+
 function loadMusic(indexNumb) {
+
     musicName.innerText = allMusic[indexNumb].name;
     musicArtist.innerText = allMusic[indexNumb].artist;
     musicImg.src = `./images/${allMusic[indexNumb].img}.jpg`;
@@ -42,19 +44,13 @@ function loadMusic(indexNumb) {
 
     itemMusicList = document.querySelectorAll('.music-list li');
 
-    console.log(itemMusicList);
 
     itemMusicList.forEach((element) => {
-        
+
+    
         element.addEventListener('click', () => {
 
             musicList.classList.remove('show');
-
-            itemMusicList.forEach((elem) => {
-    
-             
-            });
-            
                 
         });
     });
@@ -63,39 +59,6 @@ function loadMusic(indexNumb) {
 
 }
 
-inputSearch.addEventListener('input', () => {
-
-    // console.log(inputSearch.value);
-
-    let valInput = inputSearch.value.trim();
-
-    console.log(valInput);
-
-    if(valInput != "") {
-
-        itemMusicList.forEach((elem) => {
-
-            if(elem.innerText.search(valInput) == -1) {
-                elem.classList.add('hide');
-                elem.innerHTML = elem.innerText;
-            } else{
-                elem.classList.remove('hide');
-                let str = elem.innerText;
-                elem.innerHTML = insertMark(str, elem.innerText.search(valInput), valInput.length);
-
-            }
-        });
-    } else {
-
-        itemMusicList.forEach((elem) => {
-
-            elem.classList.remove('hide');
-            elem.innerHTML = elem.innerText;
-        });
-    }
-
-
-});
 
 function insertMark(string,pos,len) {
 
@@ -134,8 +97,33 @@ function prevMusic() {
     playMusic();
 }
 
+function playingNow(){
 
-console.log(allMusic.length);
+    const ulTag = document.querySelector('ul');
+
+    const allLiTags = ulTag.querySelectorAll("li");
+
+
+    for( let j = 0; j < allLiTags.length; j++){
+        let audioTag = allLiTags[j].querySelector('.audio-duration');
+        
+
+        if(allLiTags[j].classList.contains("playing")){
+            allLiTags[j].classList.remove("playing");
+            let adDuration = audioTag.getAttribute("t-duration");
+            audioTag.innerText = adDuration;
+        }
+
+        if(allLiTags[j].getAttribute("li-index") == musicIndex){
+            allLiTags[j].classList.add("playing");
+            audioTag.innerText = "Playing";
+            
+        }
+    
+        allLiTags[j].setAttribute("onclick", "clicked(this)");
+    }
+}
+
 
 // Функция Переключения вперед
 function nextMusic() {
@@ -276,93 +264,121 @@ hideMusicBtn.addEventListener('click', function() {
     showMoreBtn.click();
 });
 
+
+
 const ulTag = wrapper.querySelector("ul");
 
-for( let i = 0; i < allMusic.length; i++) {
-
-    let liTag = `<li li-index="${i}">
-                    <div class="row">
-                        <span>${allMusic[i].name}</span>
-                        <p>${allMusic[i].artist}</p>
-                    </div>
-                    <audio class="${allMusic[i].id}" src="songs/${allMusic[i].src}.mp3"></audio>
-                    <span id="${allMusic[i].id}" class="audio-duration">3:40</span>
-                </li>`;
 
 
-                // let liTag = `<li li-index="${i}">
-                //                 <div class="row row-1">
 
-                //                     <p>${allMusic[i].name}</p>
-                //                     <p>${allMusic[i].artist}</p>
+let updateMusicList = function() {
 
-                //                 </div>
+    for( let i = 0; i < allMusic.length; i++) {
 
-
-                //                 <div class="row row-2">
-
-                //                     <audio class="${allMusic[i].id}" src="songs/${allMusic[i].src}.mp3"></audio>
-                //                     <p id="${allMusic[i].id}" class="audio-duration">3:40</p>
-                                
-                //                 </div>
-
-                           
-                //              </li>`;
-
-    ulTag.insertAdjacentHTML("beforeend", liTag);
-
-    let liAudioDuration = ulTag.querySelector(`#${allMusic[i].id}`);
+        let liTag = `<li li-index="${i}">
+                        <div class="row">
+                            <span>${allMusic[i].name}</span>
+                            <p>${allMusic[i].artist}</p>
+                        </div>
+                        <audio class="${allMusic[i].id}" src="songs/${allMusic[i].src}.mp3"></audio>
+                        <span id="${allMusic[i].id}" class="audio-duration">3:40</span>
+                    </li>`;
     
-    let liAudioTag = ulTag.querySelector(`.${allMusic[i].id}`);
-
-
-    liAudioTag.addEventListener('loadeddata', function(){
-        let audioDuration = liAudioTag.duration;
+        ulTag.insertAdjacentHTML("beforeend", liTag);
+    
+        let liAudioDuration = ulTag.querySelector(`#${allMusic[i].id}`);
         
-        let totalMin = Math.floor(audioDuration / 60);
-        let totalSec = Math.floor(audioDuration % 60);
+        let liAudioTag = ulTag.querySelector(`.${allMusic[i].id}`);
+    
+    
+        liAudioTag.addEventListener('loadeddata', function(){
+            let audioDuration = liAudioTag.duration;
+            
+            let totalMin = Math.floor(audioDuration / 60);
+            let totalSec = Math.floor(audioDuration % 60);
+    
+            if(totalSec < 10) {
+                totalSec = `0${totalSec}`; // Добавляем "0" перед секундой если она меньше чем 10 сек.
+            }
+            liAudioDuration.innerText = `${totalMin}:${totalSec}`;
+            liAudioDuration.setAttribute("t-duration", `${totalMin}:${totalSec}`);
+        });
+    }
 
-        if(totalSec < 10) {
-            totalSec = `0${totalSec}`; // Добавляем "0" перед секундой если она меньше чем 10 сек.
-        }
-        liAudioDuration.innerText = `${totalMin}:${totalSec}`;
-        liAudioDuration.setAttribute("t-duration", `${totalMin}:${totalSec}`);
-    });
+
+
 };
 
-const allLiTags = ulTag.querySelectorAll("li");
+updateMusicList();
 
-function playingNow(){
-    for( let j = 0; j < allLiTags.length; j++){
-        let audioTag = allLiTags[j].querySelector('.audio-duration');
-        
+//  Сформировали тег <ul></ul>
 
-        if(allLiTags[j].classList.contains("playing")){
-            allLiTags[j].classList.remove("playing");
-            let adDuration = audioTag.getAttribute("t-duration");
-            audioTag.innerText = adDuration;
-        }
 
-        if(allLiTags[j].getAttribute("li-index") == musicIndex){
-            allLiTags[j].classList.add("playing");
-            audioTag.innerText = "Playing";
-            
-        }
+inputSearch.addEventListener('input', () => {
+
+
+    let valInput = inputSearch.value.trim();
+
+    const ul = document.querySelector('ul');
+
+    let itemsMusicList = document.querySelectorAll('li');
+
     
-        allLiTags[j].setAttribute("onclick", "clicked(this)");
+
+    if(valInput != "") {
+
+        itemsMusicList.forEach((elem) => {
+
+            if(elem.innerText.search(valInput) == -1) {
+
+                elem.classList.add('hide');
+
+               
+
+            } else{
+                elem.classList.remove('hide');
+                let str = elem.innerText;
+                elem.innerHTML = insertMark(str, elem.innerText.search(valInput), valInput.length);
+
+                elem.addEventListener('click', () => {
+
+                    musicList.classList.remove('show');
+                            
+                });
+
+            }
+        });
+
+    } else {
+
+        ul.innerHTML = '';
+
+
+        updateMusicList();
+
+        playingNow();
+
+       
+
+
+
     }
-}
+
+});
+
+
 
 
 
 function clicked(element){
+
     let getLiIndex = element.getAttribute("li-index");
 
-    
     musicIndex = getLiIndex;
     loadMusic(musicIndex);
     playMusic();
     playingNow();
 };
+
 
   

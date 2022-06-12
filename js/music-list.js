@@ -112,7 +112,7 @@ let allMusic = [
 
     {
         id: "music-12",
-        name: "Басата - Сансара",
+        name: "Баста - Сансара",
         artist: "Исполнитель : Артем",
         img: "../images/Rock__Teams/Rojdestvo",
         src: "Басата - Сансара",
