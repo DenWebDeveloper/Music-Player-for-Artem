@@ -453,8 +453,184 @@ let allMusic = [
         audioId: "audio-trek"
     },
 
+    // -----------------------------------------------------------------------------------
+
+    {
+        id: "music-45",
+        name: "7б - Знаю! Будет",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "7Б - Знаю! Будет",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-46",
+        name: "7Б - Молодые ветра",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "7Б - Молодые ветра",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-47",
+        name: "Adel' - KняZz",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Adel' - KняZz",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-48",
+        name: "А.Мусагалиев - Чё-то",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "А.Мусагалиев - Чё-то",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-49",
+        name: "Диспетчера - 2000 баксов за сигарету",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Диспетчера - 2000 баксов за сигарету",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-50",
+        name: "Добронравов - Там где клён шумит",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Добронравов - Там где клён шумит",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-51",
+        name: "КИШ - Воспоминания о былой любви",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "КиШ - Воспоминания о былой любви",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-52",
+        name: "Комиссар - Ты уйдёшь",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Комиссар - Ты уйдёшь",
+        
+        audioId: "audio-trek"
+    },
+
+
+    {
+        id: "music-53",
+        name: "Леонид Агутин - На сиреневой луне",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Леонид Агутин - На сиреневой луне",
+        
+        audioId: "audio-trek"
+    },
+
+
+    {
+        id: "music-54",
+        name: "Луна — Лебединая",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Луна — Лебединая",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-55",
+        name: "Петлюра-Зажгите свечи",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Петлюра-Зажгите свечи",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-56",
+        name: "Ранетки - Она одна",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Ранетки - Она одна",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-57",
+        name: "Сектор газа - ДУРАК",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Сектор газа - ДУРАК",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-58",
+        name: "Сергей Жуков - Десять лет",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Сергей Жуков - Десять лет",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-59",
+        name: "СерьГа - Страна чудес",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "СерьГа - Страна чудес",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-60",
+        name: "Фактор 2 - Если бы",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Фактор 2 - Если бы",
+        
+        audioId: "audio-trek"
+    },
+
+    {
+        id: "music-61",
+        name: "Хасан Мусаев - Я тебя не забуду",
+        artist: "Исполнитель : Артем",
+        img: "../images/Rock__Teams/Rojdestvo",
+        src: "Хасан Мусаев - Я тебя не забуду",
+        
+        audioId: "audio-trek"
+    },
 
 
 
+
+
+    
 
 ];
