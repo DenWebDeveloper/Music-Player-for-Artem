@@ -13,7 +13,9 @@
 
 :root {
     --pink: #ff74a4;
-    --violet: #9f6ea3;
+    /* --violet: #9f6ea3; */
+    --violet: #6d04e5;
+
     --lightblack: #515c6f;
     --white: #fff;
     --darkwhite: #cecaca;
@@ -442,4 +444,6 @@ mark {
 
     color: var(--violet);
     pointer-events: none;
+
+    font-weight: 700;
 }
